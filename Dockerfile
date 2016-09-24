@@ -1,8 +1,7 @@
 #
 # GitLab CI: Android v0.2
 #
-# https://hub.docker.com/r/jangrewe/gitlab-ci-android/
-# https://git.faked.org/jan/gitlab-ci-android
+# https://hub.docker.com/r/showcheap/gitlab-ci-android/
 #
 
 FROM ubuntu:16.04
@@ -17,6 +16,11 @@ ENV SDK_PACKAGES "build-tools-${VERSION_BUILD_TOOLS},android-${VERSION_TARGET_SD
 ENV ANDROID_HOME "/sdk"
 ENV PATH "$PATH:${ANDROID_HOME}/tools"
 ENV DEBIAN_FRONTEND noninteractive
+
+# Accept License
+
+# Constraint Layout / [Solver for ConstraintLayout 1.0.0-alpha8, ConstraintLayout for Android 1.0.0-alpha8]
+echo "8933bad161af4178b1185d1a37fbf41ea5269c55" > $ANDROID_HOME/licenses/android-sdk-license
 
 RUN apt-get -qq update && \
     apt-get install -qqy --no-install-recommends \
