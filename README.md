@@ -1,4 +1,5 @@
-# Docker Image for Build Android
+# Docker Image for Build Android [![](https://images.microbadger.com/badges/image/showcheap/gitlab-ci-android.svg)](https://microbadger.com/images/showcheap/gitlab-ci-android "Get your own image badge on microbadger.com")
+
 GitLab CI image for building Android apps
 
 This code on repo will automatically build on Docker Hub : 
