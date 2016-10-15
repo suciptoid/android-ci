@@ -1,4 +1,6 @@
-# Docker Image for Build Android [![](https://images.microbadger.com/badges/image/showcheap/gitlab-ci-android.svg)](https://microbadger.com/images/showcheap/gitlab-ci-android "Get your own image badge on microbadger.com")
+# Docker Image for Build Android 
+[![](https://images.microbadger.com/badges/image/showcheap/gitlab-ci-android.svg)](https://microbadger.com/images/showcheap/gitlab-ci-android "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/showcheap/gitlab-ci-android.svg)](https://microbadger.com/images/showcheap/gitlab-ci-android "Get your own version badge on microbadger.com")
 
 GitLab CI image for building Android apps
 
