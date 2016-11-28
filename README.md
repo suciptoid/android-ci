@@ -25,7 +25,7 @@ https://gitlab.com/showcheap/android-ci/branches
 ## Example `.gitlab-ci.yml` file
 You can specify tag for target SDK Version (If available, if not PR are welcome)
 ```yml
-image: registry.gitlab.com/showcheap/android-ci:T24-B25.0.1
+image: registry.gitlab.com/showcheap/android-ci:T23-B23.0.3
 
 before_script:
     - export GRADLE_USER_HOME=`pwd`/.gradle
