@@ -4,14 +4,14 @@
 
 GitLab CI image for building Android apps
 
-This code on repo will automatically build on Docker Hub : 
+This code on repo will automatically build on Gitlab Registry : 
 
-https://hub.docker.com/r/showcheap/gitlab-ci-android/
+https://gitlab.com/showcheap/android-ci/container_registry
 
 ## Example `.gitlab-ci.yml` file
 You can specify tag for target SDK Version (If available, if not PR are welcome)
 ```yml
-image: showcheap/gitlab-ci-android:latest
+image: registry.gitlab.com/showcheap/android-ci:latest
 
 before_script:
     - export GRADLE_USER_HOME=`pwd`/.gradle
