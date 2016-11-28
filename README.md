@@ -12,11 +12,15 @@ Please specify image version depends on your android project using docker images
 * `T` for Target SDK Version
 
 Example
-```
+```yml
 image: registry.gitlab.com/showcheap/android-ci:T24-B25.0.1
-``
+```
 
 For android project using `targetSdkVersion` version `24` and `buildToolsVersion` version `25.0.1`
+
+You can see available tag on branch section
+
+https://gitlab.com/showcheap/android-ci/branches
 
 ## Example `.gitlab-ci.yml` file
 You can specify tag for target SDK Version (If available, if not PR are welcome)
