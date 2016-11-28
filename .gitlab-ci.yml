@@ -4,6 +4,6 @@ build_image:
   - docker:dind
   script:
     - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
-    - docker build -t registry.gitlab.com/showcheap/android-ci .
+    - docker build -t registry.gitlab.com/showcheap/android-ci:T23-B23.0.3 .
     - docker push registry.gitlab.com/showcheap/android-ci:T23-B23.0.3
 
