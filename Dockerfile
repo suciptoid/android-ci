@@ -12,6 +12,7 @@ ENV VERSION_BUILD_TOOLS "25.0.3"
 ENV VERSION_TARGET_SDK "25"
 
 # Prepare System
+ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get -qq update && \
     apt-get install -qqy --no-install-recommends curl html2text openjdk-8-jdk libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1 unzip && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
@@ -27,7 +28,6 @@ RUN unzip /tools.zip -d /sdk && \
 # Configure PATH
 ENV ANDROID_HOME "/sdk"
 ENV PATH "${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools"
-ENV DEBIAN_FRONTEND noninteractive
 
 # Accept License
 RUN mkdir -p $ANDROID_HOME/licenses/ && \
