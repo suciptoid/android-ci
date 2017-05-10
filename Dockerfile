@@ -35,11 +35,11 @@ RUN mkdir -p $ANDROID_HOME/licenses/ && \
     echo "84831b9409646a918e30573bab4c9c91346d8abd" > $ANDROID_HOME/licenses/android-sdk-preview-license
 
 # Install SDK Package
-RUN sdkmanager "platform-tools" && \
-    sdkmanager "platforms;android-${VERSION_TARGET_SDK}" && \
-    sdkmanager "build-tools;${VERSION_BUILD_TOOLS}" && \
-    sdkmanager "extras;android;m2repository" && \
-    sdkmanager "extras;google;m2repository" && \
-    sdkmanager "extras;google;google_play_services" && \
-    sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2" && \
-    sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout;1.0.1"
+RUN sdkmanager "platform-tools" --verbose && \
+    sdkmanager "platforms;android-${VERSION_TARGET_SDK}" --verbose && \
+    sdkmanager "build-tools;${VERSION_BUILD_TOOLS}" --verbose && \
+    sdkmanager "extras;android;m2repository" --verbose && \
+    sdkmanager "extras;google;m2repository" --verbose && \
+    sdkmanager "extras;google;google_play_services" --verbose && \
+    sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2" --verbose && \
+    sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout;1.0.1" --verbose
